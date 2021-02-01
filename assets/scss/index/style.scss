@@ -1,0 +1,218 @@
+*{
+	line-height: 1.2em;
+}
+*::selection {
+    background: rgba(0,0,0,.75);
+    color: #fff;
+}
+main{
+	width: 100%;
+	height: 100%;
+	background-color: #f9f9f9;
+}
+#h1-main-products-services-announcer{
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	padding: 1em 0; 
+	width: 100%;
+}
+#div-main-content{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 79.5%;
+}
+#div-main-content>article{
+	padding: .5%;
+}
+#div-main-content>article>a>figure{
+	position: relative;
+}
+
+#div-main-content>article>a>*{
+	display: inline-block;
+} 
+#div-main-content>article:nth-child(odd)>a>figure{
+	float: left;
+}
+#div-main-content>article>a>div>button{
+	color: #fff;
+	position: relative;
+	left: 72.5%;
+	background-color: var(--dark-primary-color);
+	padding: .75em;
+	transform: translateX(50%);
+	cursor: pointer;
+
+}
+#div-main-content>article>a>figure>img{
+	height: 20em;
+	width: 30em;
+}
+#div-main-content>article>a>figure>div{
+	display: none;
+}
+#div-main-content>article>a>figure>div>p{
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+.js-hoverChange-pseudo-hover, #div-main-content>article>a>figure:hover>div{
+	width: 30em;
+	height: 20em;
+	display: flex !important;
+	align-items: center;
+	text-align: center;
+	background-color: rgba(0,0,0, .75);
+	position: absolute;
+	top: 0;
+}
+#div-main-content>article>a>div{
+	height: 20em;
+	width: calc(100% - 30.3em);
+}
+#div-main-content>article>a>div>h2{
+	font-size: 3.5vh;
+	padding: 1em;
+	text-align: center;
+}
+#div-main-content>article>a>div>p{
+	margin: auto;
+	padding: 1em;
+	text-align: justify;
+	text-indent: 2em;
+}
+#div-main-guide{
+	/*border: 1px solid #4288BD;*/
+	color: #275170;
+	padding: 1em;
+	display: inline-block;
+	position: sticky;
+	height: calc(100vh - 10px);
+	top: 5px;
+	width: 20%;
+}
+#div-main-guide>a{
+	width: 100%;
+	display: block;
+	text-align: center;
+	position: relative;
+	bottom: -92vh;
+	color: green;
+}
+#div-main-guide>a>span{
+	color: green;
+	margin-top: -3px;
+}
+
+
+#div-main-guide>dl>dd{
+	padding-left: 1.5em;
+}
+#div-list-itens-services-products{
+	margin: 100px 0;
+	display: inline-block;
+	width: 79.5%;
+	font-size: 0;
+}
+#div-list-itens-services-products>div{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+#div-list-itens-services-products>div>div>div>img{
+	height: 115px;
+	width: 115px;
+	border-radius: 115px;
+}
+#div-list-itens-services-products>div>div{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	padding: 10px;
+}
+#div-list-itens-services-products-line1{
+	border-top: 1px solid #4288BD;
+}
+ #div-list-itens-services-products-line2{
+	border-bottom: 1px solid #4288BD;
+}
+#div-map-container{
+	width: 79.5%;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+}
+#div-map-container>img{
+	width: 90%;
+
+}
+#div-blog-content-show{
+	width: 79.5%;
+	display: inline-block;
+	padding: 10px;
+}
+#div-blog-content-show>aside{
+	margin: 10px 0;
+}
+#div-blog-content-show>aside>a>section{
+	box-shadow: 0 0 3px black;
+}
+#div-blog-content-show>aside>a>section>img{
+	width: 40%;
+	height: 250px;
+}
+#div-blog-content-show>aside>a>section>div{
+	display: inline-block;
+	width: 59.5%;
+}
+#div-blog-content-show>aside>a>section>div>div{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: space-around;
+}
+#div-blog-content-show>aside>a>section>div>div>h3{
+	font-weight: 600;
+	padding: 20px 10px;
+	text-align: center;
+	font-size: 1.25em;
+}
+#div-blog-content-show>aside>a>section>div>div>p{
+	padding: 0 0 20px 7px;
+}
+#section-carousel-clients-declaration{
+	padding: 80px 0;
+	background-color: #fff;
+}
+#section-carousel-clients-declaration>div>figure>h1>img{
+	width: 60%;
+}
+.gallery>.item{
+	background-color: #fff;
+}
+#section-carousel-clients-declaration>div>div>button{
+	transform: translate(25px, 25px);
+	cursor: pointer;
+	animation: jumping 1.5s ease-in-out infinite; 
+	color: #008acc;
+	overflow: hidden;
+	font-size: 3em;
+	position: absolute;
+	top: -355%;
+	width: 50px;
+	height: 50px;
+	left: calc(16% - 7px);
+}
+#section-carousel-clients-declaration>div>div>button:nth-child(odd){
+	left: calc(80.3% + 7px);
+}
+@keyframes jumping{
+	from{
+		transform: scale(1);
+	}
+	to{
+		transform: scale(1.25);
+		color: rgba(#008acc, 0);
+	}
+}

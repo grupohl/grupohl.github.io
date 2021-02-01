@@ -1,0 +1,82 @@
+/*.typewriter h1 {
+	overflow: hidden; 
+	border-right: .15em solid orange; 
+	font-size: 2em;
+	white-space: nowrap; 
+	margin: 0 auto;
+	letter-spacing: .15em; 
+	animation: typing 3s steps(15, end) infinite, blink-caret .75s step-end infinite;
+}
+.typwriter h1:hover{
+	animation-play-state: running;
+}
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+}
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: darkblue; }
+}
+.typewriter{
+	position: absolute;
+	width: 12em;
+	transform: translateX(-50%);
+	left: 50%;
+	top: 80vh;
+}
+.typewriter h1{
+	color: #fff;
+}
+.typewriter-2{
+	animation-delay: 5s !important;
+	left: 25%;
+	width: 16.5em;
+}*/
+body {
+  background-color:#333;
+}
+
+.typewriter-output {
+  text-align:center;
+  font-family: 'Arial', monospace;
+  color:white;
+}
+.typewriter-output h1{
+	font-size:30px;
+}
+
+/* Cursor Styling */
+
+.cursor::after {
+	content:'';
+	display:inline-block;
+	margin-left:3px;
+	background-color:white;
+	animation-name:blink;
+	animation-duration:0.5s;
+	animation-iteration-count: infinite;
+}
+h1.cursor::after {
+	height:24px;
+	width:13px;
+}
+p.cursor::after {
+	height:13px;
+	width:6px;
+}
+
+@keyframes blink {
+	0% {
+   		opacity:1;
+  	}
+  	49% {
+    	opacity:1;
+  	}
+  	50% {
+    	opacity:0;
+  	}
+  	100% {
+    	opacity:0;
+  	}
+}

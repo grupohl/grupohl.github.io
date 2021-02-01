@@ -1,0 +1,14 @@
+html{
+	overflow-y: overlay;
+}
+::-webkit-scrollbar{
+	width: 6px;
+	background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #0000;
+}
+::-webkit-scrollbar-thumb{
+	background-color: var(--dark-primary-color);
+	border-radius: 6px;
+}

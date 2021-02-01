@@ -1,0 +1,117 @@
+:root {
+    --navbar-height: 100px;
+    --navbar-font-size: 1em;
+}
+header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+nav {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+    height: var(--navbar-height);
+    padding-left: 4vw;
+}
+#h1-header-logo-container {
+    display: flex;
+    align-items: center;
+}
+#h1-header-logo-container a h1 {
+    font-size: 0px;
+}
+#h1-header-logo-container a img {
+    width: 126px;
+}
+#ul-header-menu-links-container {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 5vw;
+    width: 40%;
+    font-size: 1.2em;
+}
+#ul-header-menu-links-container > li {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#ul-header-menu-links-container > li > a {
+    color: #fff;
+    transition: 0.5s;
+    font-size: 0.75em;
+    padding: 0.5em 1em;
+    border: 1px solid white;
+    text-transform: uppercase;
+}
+#ul-header-menu-links-container > li > a:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+}
+.submenu {
+    background: var(--light-primary-color);
+    border-top: 0.5px solid white;
+    border-radius: 3px 3px 5px 5px;
+    box-shadow: 0 0 5px var(--primary-color);
+    display: none;
+    padding-bottom: 1em;
+    position: fixed;
+    top: calc(var(--navbar-height) - 1em);
+    transition: 0.5s;
+    z-index: 1;
+}
+#ul-header-menu-links-container > li:hover > .submenu,
+.submenu:hover {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: center;
+}
+.submenu > span,
+nav > ul > li:hover > span {
+    align-self: center;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    box-shadow: 0 0 5px var(--primary-color);
+    height: 1em;
+    width: 1em;
+}
+#ul-header-menu-links-container > li > span {
+    position: absolute;
+    bottom: 0;
+}
+.submenu > h4,
+.submenu > h2 > a {
+    background-color: var(--light-primary-color);
+    color: #333;
+    transition: 0.5s;
+    font-size: 1em;
+}
+.submenu > h4 > a {
+    padding: 0 5px;
+    color: white;
+}
+.submenu > h4 > a:hover {
+    color: var(--dark-primary-color);
+}
+.submenu > h2 {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    padding-top: 0.5em;
+    overflow-y: hidden;
+}
+.submenu > h2 > a {
+    padding: 0.2em;
+    transition: 0.5s;
+}
+.submenu > h2 > a:hover {
+    background-color: white;
+}
